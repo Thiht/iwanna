@@ -1,7 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-IFS=$'\n\t'
-
-pre-install() {
-  sudo add-apt-repository -y ppa:numix/ppa
-}
