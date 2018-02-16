@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://github.com/xflux-gui/fluxgui#install-instructions
+
 set -euo pipefail
 IFS=$'\n\t'
 

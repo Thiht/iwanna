@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://www.google.com/linuxrepositories/
+
 set -euo pipefail
 IFS=$'\n\t'
 

@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce
+
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -7,8 +10,6 @@ pre-install() {
   sudo apt-get install \
     apt-transport-https \
     ca-certificates \
-    linux-image-extra-"$(uname -r)" \
-    linux-image-extra-virtual \
     software-properties-common
 
   curl -s https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -

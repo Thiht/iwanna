@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://github.com/horst3180/arc-theme#installation
+
 set -euo pipefail
 IFS=$'\n\t'
 
