@@ -25,6 +25,11 @@ elif dpkg -s "$package" > /dev/null 2>&1; then
   exit 1
 fi
 
+# shellcheck disable=SC2034
+if declare -F cleanup > /dev/null 2>&1; then
+  trap cleanup EXIT
+fi
+
 if declare -F pre-install > /dev/null 2>&1; then
   pre-install
 fi

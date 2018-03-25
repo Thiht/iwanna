@@ -18,6 +18,10 @@ Fix
 END
 )
 
+cleanup() {
+  rm /tmp/robo3t.tar.gz
+}
+
 install() {
   # Download archive
   curl -#Lo /tmp/robo3t.tar.gz "https://download.robomongo.org/$VERSION/linux/robo3t-$VERSION-$OS-$ARCH-$HASH.tar.gz"
@@ -28,7 +32,4 @@ install() {
 
   # Custom
   echo "$_troubleshooting"
-
-  # Cleanup
-  rm /tmp/robo3t.tar.gz
 }
