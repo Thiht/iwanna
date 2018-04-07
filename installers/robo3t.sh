@@ -27,7 +27,7 @@ install() {
   curl -#Lo /tmp/robo3t.tar.gz "https://download.robomongo.org/$VERSION/linux/robo3t-$VERSION-$OS-$ARCH-$HASH.tar.gz"
 
   # Install
-  sudo tar -C /opt -xzf /tmp/robo3t.tar.gz
+  sudo tar -C /opt -xf /tmp/robo3t.tar.gz
   sudo ln -s "/opt/robo3t-$VERSION-$OS-$ARCH-$HASH/bin/robo3t" /usr/bin/robo3t
 
   # Custom
